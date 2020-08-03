@@ -944,6 +944,16 @@ template {
 }
 
 .other-hotels__booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 350px;
   height: 250px;
   background-color: #0A223D;
@@ -999,6 +1009,8 @@ template {
 }
 
 .other-hotels__button {
+  min-width: 120px;
+  min-height: 40px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -2090,7 +2102,6 @@ template {
   .other-hotels__booking {
     max-width: 283px;
     width: 100%;
-    padding: 20px 12px 15px 20px;
   }
   .other-hotels__booking--1 {
     max-width: 288px;
@@ -2118,6 +2129,7 @@ template {
     padding-bottom: 15px;
   }
   .other-hotels__button {
+    min-width: 90px;
     font-weight: normal;
     padding: 4px 9px;
     font-size: 10px;
@@ -2438,13 +2450,14 @@ template {
   .other-hotels__booking {
     max-width: 280px;
     width: 100%;
-    padding: 20px 12px 15px 20px;
+    max-height: 210px;
+    padding: 20px 12px 25px 20px;
   }
   .other-hotels__booking--1 {
     max-width: 280px;
     width: 100%;
-    height: 200px;
-    padding: 20px 12px 15px 20px;
+    max-height: 250px;
+    padding: 20px 12px 25px 20px;
   }
   .other-hotels__booking-info {
     padding-bottom: 0;
@@ -2463,23 +2476,29 @@ template {
   .other-hotels__name {
     font-size: 14px;
     line-height: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
   }
   .other-hotels__button {
+    min-height: 30px;
+    min-width: 60px;
     font-weight: normal;
     padding: 4px 9px;
     font-size: 10px;
+  }
+  .booking-info {
+    padding-bottom: 0;
   }
   .booking-info__geolocation, .booking-info__guests, .booking-info__room {
     font-size: 10px;
   }
   .old-price {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 8px;
+    line-height: 10px;
   }
   .new-price {
-    font-size: 14px;
-    line-height: 18px;
+    font-weight: semi-bold;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

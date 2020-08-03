@@ -301,7 +301,6 @@
     &__booking
       max-width: 283px
       width: 100%      
-      padding: 20px 12px 15px 20px
       &--1
         max-width: 288px
         width: 100%
@@ -323,6 +322,7 @@
       line-height: 100%
       padding-bottom: 15px
     &__button
+      min-width: 90px;
       font-weight: normal
       padding: 4px 9px
       font-size: 10px
@@ -546,12 +546,13 @@
     &__booking
       max-width: 280px
       width: 100%
-      padding: 20px 12px 15px 20px
+      max-height: 210px
+      padding: 20px 12px 25px 20px;
       &--1
         max-width: 280px
         width: 100%
-        height: 200px
-        padding: 20px 12px 15px 20px
+        max-height: 250px
+        padding: 20px 12px 25px 20px;        
       &-info
         padding-bottom: 0
     &__image
@@ -566,18 +567,22 @@
     &__name
       font-size: 14px
       line-height: 100%
-      padding-bottom: 15px
+      padding-bottom: 11px
     &__button
+      min-height: 30px;
+      min-width: 60px;
       font-weight: normal
       padding: 4px 9px
       font-size: 10px
   .booking
     &-info
+      padding-bottom: 0
       &__geolocation, &__guests, &__room
         font-size: 10px
   .old-price
-    font-size: 10px
-    line-height: 14px
+    font-size: 8px
+    line-height: 10px
   .new-price
-    font-size: 14px
-    line-height: 18px
+    font-weight: semi-bold
+    font-size: 12px
+    line-height: 14px
