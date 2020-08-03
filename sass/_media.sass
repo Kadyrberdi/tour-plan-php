@@ -24,6 +24,12 @@
       flex-basis: 100%
     &__title
       white-space: nowrap
+  .modal
+    &__dialog
+      max-width: 378px
+      padding: 22px 60px
+    &__button
+      min-width: 120px
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -124,7 +130,16 @@
       margin-left: 0
     &__title
       font-size: 16px
-    
+  .modal
+    &__dialog
+      max-width: 350px
+      padding: 20px 40px
+    &__button
+      min-width: 90px
+      min-height: 20px  
+      padding: 10px
+    &__title
+      margin-top: 0
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -329,6 +344,15 @@
       font-size: 14px
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      max-width: 310px
+    &__message
+      min-height: 80px
+    &__title
+      padding: 0
+    &__input
+      height: 40px
 @media ( max-width: 576px )
   .container
     max-width: 500px
@@ -447,6 +471,17 @@
       align-items: flex-start
     &__navbar
       margin-bottom: 10px
+  .modal
+    &__dialog
+      min-width: 250px
+    &__title
+      font-size: 14px
+    &__input
+      height: 25px
+    &__input, &__message, &__info
+      font-size: 10px
+    &__button
+      min-width: 60px
 @media (max-width: 380px)
   .container
     max-width: 340px

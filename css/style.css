@@ -1613,6 +1613,10 @@ template {
 }
 
 .modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
   margin-bottom: 15px;
   text-align: center;
   padding-right: 20px;
@@ -1620,14 +1624,29 @@ template {
 }
 
 .modal__input {
-  margin-bottom: 15px;
   width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 15px;
 }
 
 .modal__message {
-  margin-bottom: 15px;
   width: 100%;
   min-height: 123px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1664,6 +1683,13 @@ template {
   }
   .footer__title {
     white-space: nowrap;
+  }
+  .modal__dialog {
+    max-width: 378px;
+    padding: 22px 60px;
+  }
+  .modal__button {
+    min-width: 120px;
   }
 }
 
@@ -1816,6 +1842,18 @@ template {
   }
   .footer__title {
     font-size: 16px;
+  }
+  .modal__dialog {
+    max-width: 350px;
+    padding: 20px 40px;
+  }
+  .modal__button {
+    min-width: 90px;
+    min-height: 20px;
+    padding: 10px;
+  }
+  .modal__title {
+    margin-top: 0;
   }
 }
 
@@ -2101,6 +2139,18 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    max-width: 310px;
+  }
+  .modal__message {
+    min-height: 80px;
+  }
+  .modal__title {
+    padding: 0;
+  }
+  .modal__input {
+    height: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2282,6 +2332,21 @@ template {
   }
   .footer__navbar {
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    min-width: 250px;
+  }
+  .modal__title {
+    font-size: 14px;
+  }
+  .modal__input {
+    height: 25px;
+  }
+  .modal__input, .modal__message, .modal__info {
+    font-size: 10px;
+  }
+  .modal__button {
+    min-width: 60px;
   }
 }
 
