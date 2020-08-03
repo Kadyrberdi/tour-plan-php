@@ -1524,7 +1524,8 @@ template {
 
 .footer__message {
   max-width: 545px;
-  max-height: 123px;
+  min-height: 123px;
+  height: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 15px;
