@@ -2489,7 +2489,7 @@ template {
   }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 485px) {
   .modal__dialog {
     height: 100vh;
     overflow-y: auto;
