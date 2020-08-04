@@ -579,18 +579,8 @@
     font-size: 12px
     line-height: 14px
     
-@media (max-height: 420px)
+@media (max-height: 750px)
   .modal
     &__dialog
-      max-height: 400px
-    &__input
-      height: 25px
-    &__message 
-      min-height: 0 
-@media (max-height: 330px)
-  .modal
-    &__dialog
-      max-height: 300px
-    &__input
-      height: 20px
-      margin-bottom: 10px
+      height: 100vh
+      overflow-y: auto

@@ -1631,7 +1631,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   text-align: center;
 }
 
@@ -2489,25 +2489,10 @@ template {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 750px) {
   .modal__dialog {
-    max-height: 400px;
-  }
-  .modal__input {
-    height: 25px;
-  }
-  .modal__message {
-    min-height: 0;
-  }
-}
-
-@media (max-height: 330px) {
-  .modal__dialog {
-    max-height: 300px;
-  }
-  .modal__input {
-    height: 20px;
-    margin-bottom: 10px;
+    height: 100vh;
+    overflow-y: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
