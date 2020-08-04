@@ -138,8 +138,6 @@
       min-width: 90px
       min-height: 20px  
       padding: 10px
-    &__title
-      margin-top: 0
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -346,15 +344,6 @@
       font-size: 14px
     &__input
       flex-basis: 100%
-  .modal
-    &__dialog
-      max-width: 310px
-    &__message
-      min-height: 80px
-    &__title
-      padding: 0
-    &__input
-      height: 40px
 @media ( max-width: 576px )
   .container
     max-width: 500px
@@ -477,15 +466,11 @@
       margin-bottom: 10px
   .modal
     &__dialog
-      min-width: 250px
-    &__title
-      font-size: 14px
+      min-width: 300px
+    &__message
+      min-height: 80px
     &__input
-      height: 25px
-    &__input, &__message, &__info
-      font-size: 10px
-    &__button
-      min-width: 60px
+      height: 40px
 @media (max-width: 380px)
   .container
     max-width: 340px
@@ -519,6 +504,13 @@
     &__input
       max-width: 340px
       width: 100%
+  .modal
+    &__input
+      height: 25px
+    &__input, &__message, &__info
+      font-size: 10px
+    &__button
+      min-width: 60px
 @media (max-width: 330px)
   .container
     max-width: 280px
@@ -586,3 +578,19 @@
     font-weight: semi-bold
     font-size: 12px
     line-height: 14px
+    
+@media (max-height: 420px)
+  .modal
+    &__dialog
+      max-height: 400px
+    &__input
+      height: 25px
+    &__message 
+      min-height: 0 
+@media (max-height: 330px)
+  .modal
+    &__dialog
+      max-height: 300px
+    &__input
+      height: 20px
+      margin-bottom: 10px
