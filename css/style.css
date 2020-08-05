@@ -1586,13 +1586,19 @@ template {
 }
 
 .footer__navbar {
-  width: 283px;
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__form {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .modal__overlay {
@@ -2038,7 +2044,7 @@ template {
     padding-bottom: 83px;
   }
   .newsletter-wrapper {
-    max-width: 92%;
+    max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2378,6 +2384,10 @@ template {
   .modal__input {
     height: 40px;
   }
+  .newsletter__form {
+    width: 380px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2424,6 +2434,10 @@ template {
   }
   .modal__button {
     min-width: 60px;
+  }
+  .newsletter__form {
+    width: 280px;
+    width: 100%;
   }
 }
 

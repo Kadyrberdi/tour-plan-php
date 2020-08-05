@@ -73,7 +73,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "*Please specify your phone",
-          minlength: "Please enter at least 11 characters.",
+          minlength: "*Please enter at least 10 characters.",
         },
         email: {
           required: "*We need your email address to contact with you",

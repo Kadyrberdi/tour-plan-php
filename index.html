@@ -494,23 +494,20 @@
       data-image-src="img/newsletter-bg.jpg"
       data-speed="0.4"
     >
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
-          subscribe to our
-          <span class="newsletter-title__strong">NEWSLETTER</span>
-        </h2>
-        <form action="send.php" method="POST" class="form newsletter__form">
-          <input
-            type="email"
-            class="input newsletter__input"
-            placeholder="Your email address*"
-            name= "email" 
-            required
-          />
-          <button class="newsletter__button">Send</button>
-        </form>
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <h2 class="newsletter-title">
+            subscribe to our
+            <span class="newsletter-title__strong">NEWSLETTER</span>
+          </h2>
+          <form action="send.php" method="POST" class="form newsletter__form">
+            <input type="email" class="input newsletter__input" placeholder="Your email address*" name="email" required />
+            <button class="newsletter__button">Send</button>
+          </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
       </div>
-      <!-- /.newsletter-wrapper -->
+      <!-- /.container -->
     </section>
     <!-- /.newsletter -->
     <section class="reviews">
@@ -804,7 +801,7 @@
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required minlength="11">
+              <input type="tel" class="input footer__input phone_ru" placeholder="Phone Number*" name="phone" required minlength="17">
             </div>
             <textarea class="message footer__message"  placeholder="Message" name="message"></textarea> 
             <button class="button footer__button" type="submit">Send</button>
@@ -836,7 +833,7 @@
           <h3 class="title modal__title">Booking</h3>
           <form action="send.php" method="POST" class="form modal__form">
             <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-            <input type="tel" class="input modal__input phone_ru" placeholder="Phone Number*" name="phone" required minlength="11">
+            <input type="tel" class="input modal__input phone_ru" placeholder="Phone Number*" name="phone" required minlength="17">
             <input type="email" class="input modal__input" placeholder="Your email address*" name="email" required />
             <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
             <button class="button modal__button" type="submit">Send</button>
