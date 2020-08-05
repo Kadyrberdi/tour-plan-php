@@ -23,7 +23,8 @@
     &-wrapper
       grid-template-columns: 210px 200px 300px 190px;
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__title
       white-space: nowrap
   .modal
@@ -125,7 +126,8 @@
         grid-row: 4
         grid-column: span 4    
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__bottom
       margin-left: 0
     &__title
@@ -343,7 +345,8 @@
     &__item, &__text
       font-size: 14px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 576px )
   .container
     max-width: 500px
@@ -450,7 +453,7 @@
         grid-row: 6
       &-form
         grid-row: 7
-    &__input, &__message
+    &__input-group, &__message
       max-width: 500px
       width: 100%
     &__button
@@ -502,8 +505,9 @@
       max-width: 340px
       width: 100%
     &__input
-      max-width: 340px
-      width: 100%
+      &-group
+        max-width: 340px
+        width: 100%
   .modal
     &__input
       height: 25px
