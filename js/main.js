@@ -85,4 +85,5 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".phone_ru").mask("+7(000) 000-00-00");
   });
+  AOS.init();
 });
