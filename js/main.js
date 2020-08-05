@@ -73,6 +73,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "*Please specify your phone",
+          minlength: "Please enter at least 11 characters.",
         },
         email: {
           required: "*We need your email address to contact with you",
@@ -80,5 +81,8 @@ $(document).ready(function () {
         },
       },
     });
+  });
+  $(document).ready(function () {
+    $(".phone_ru").mask("+7(000) 000-00-00");
   });
 });
