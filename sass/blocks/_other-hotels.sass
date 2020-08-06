@@ -25,6 +25,8 @@
       display: flex
       max-width: 730px
   &__offer
+    width: 61px
+    height: 18px
     position: absolute
     padding: 4px 9px
     background-color: $primary
@@ -35,7 +37,13 @@
     border-radius: 0px 4px 4px 0px;
     left: 0
     top: 26px
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
     &--1
+      width: 95px
+      height: 30px
       padding: 8px 12px
   &__image
     width: 350px
@@ -70,7 +78,10 @@
     font-size: 18px;
     line-height: 23px;
     padding-bottom: 23px
-    margin: 0  
+    margin: 0
+    &--1
+      margin: 0
+      padding-bottom: 26px  
   &__description
     font-style: normal;
     font-weight: normal;
@@ -95,13 +106,19 @@
     border-radius: 4px
     cursor: pointer
     padding: 11px 27px
+  &__icon
+    margin-right: 14px
 .booking
   &-info
     display: flex
     flex-direction: column
     justify-content: space-between
-    padding-bottom: 12px
+    padding-bottom: 13px
+    &--1
+      padding-bottom: 15px
     &__geolocation, &__guests, &__room
+      display: flex
+      align-items: center
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -119,6 +136,8 @@
   line-height: 18px;
   text-decoration-line: line-through;
   padding-bottom: 5px
+  &--1
+    padding-bottom: 26px
 .new-price
   font-style: normal;
   font-weight: bold;
