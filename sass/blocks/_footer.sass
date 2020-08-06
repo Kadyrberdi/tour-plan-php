@@ -16,6 +16,7 @@
     font-size: 18px;
     line-height: 23px;
     margin: 0 0 16px 0
+    text-transform: uppercase
     &--mb3
       margin-bottom: 30px
     &--social
@@ -27,6 +28,8 @@
   &__text
     color: $footer-text-color
     margin-bottom: 22px
+    &:hover
+      color: $light
   &__item    
     font-style: normal;
     font-weight: normal;
@@ -41,12 +44,22 @@
       font-size: 14px;
       line-height: 160%;
       color: $footer-text-color
+    &:hover
+      color: $light
   &__icon
     &-wrapper
       min-width: 40px
   &__link
     text-decoration: none
     color: inherit
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    &:hover
+      color: $light
+      background-size: 100% 2px;
   &__logo
     width: 166px
     height: 192px
@@ -100,4 +113,15 @@
     justify-content: space-between
   &__form
     align-items: baseline
-    
+.facebook
+  &:hover, &:focus
+    background-color: blue
+    border-radius: 50%
+.youtube
+  &:hover, &:focus
+    background-color: red
+    border-radius: 50%
+.instagram
+  &:hover, &:focus
+    background-color: #B70094
+    border-radius: 50%
