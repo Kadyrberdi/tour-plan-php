@@ -87,3 +87,9 @@ $(document).ready(function () {
   });
   AOS.init();
 });
+
+document.querySelector(function () {
+  if (map.getAttribute("data-src")) {
+    map.setAttribute("src", map.getAttribute("data-src"));
+  }
+});
