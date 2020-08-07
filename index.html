@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMiJZKINXRG4L2jYSNPVZFuUchTxZB1eM&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
@@ -49,9 +49,9 @@
             <img
               src="img/avatar-img.jpg"
               alt="user: Nathan"
-              class="user__avatar"
+              class="user-avatar"
             />
-            <span class="user__name">Nathan</span>
+            <span class="user-name">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -69,27 +69,27 @@
             <li class="navbar-menu__item_mobile_visible">
               <a
                 href="#"
-                class="navbar-top__user navbar-top__user--mobile--visible"
+                class="navbar-menu__user navbar-menu__user--mobile--visible"
               >
                 <img
                   src="img/avatar-img.jpg"
                   alt="user: Nathan"
-                  class="user__avatar"
+                  class="user-avatar"
                 />
-                <span class="user__name">Nathan</span>
+                <span class="user-name">Nathan</span>
               </a>
             </li>
             <li class="navbar-menu__item_mobile_visible">
               <form
                 action="#"
-                class="navbar-top__search navbar-top__search--mobile--visible"
+                class="navbar-menu__search navbar-menu__search--mobile--visible"
               >
                 <input
                   type="text"
-                  class="navbar-top__search_input"
+                  class="navbar-menu__search_input"
                   placeholder="Search Location"
                 />
-                <button class="navbar-top__search_button">
+                <button class="navbar-menu__search_button">
                   <img src="img/search.svg" alt="search-icon" />
                 </button>
               </form>
@@ -305,7 +305,9 @@
                 <img src="img/Star.svg" alt="foto: star" />
               </div>
               <!-- /.other-hotels__ratings -->
-              <h3 class="other-hotels__name--1">Hotel Blue Haven</h3>
+              <h3 class="other-hotels__name other-hotels__name--1">
+                Hotel Blue Haven
+              </h3>
               <p class="other-hotels__description">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
@@ -314,7 +316,7 @@
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
               <!-- /.other-hotels__description -->
-              <div class="booking-info--1">
+              <div class="booking-info booking-info--1">
                 <div class="booking-info__geolocation">
                   <div class="other-hotels__icon">
                     <img src="img/geolocation.svg" alt="foto: geolocation" />
@@ -340,7 +342,7 @@
               <!-- /.booking-info -->
               <div class="pay-book">
                 <div class="price other-hotels__price">
-                  <span class="old-price--1">$ 10,500</span>
+                  <span class="old-price old-price--1">$ 10,500</span>
                   <strong class="new-price">$ 8,500</strong>
                 </div>
                 <!-- /.price other-hotels__price -->
@@ -1032,7 +1034,6 @@
     <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMiJZKINXRG4L2jYSNPVZFuUchTxZB1eM&callback=myMap"></script>
     <script src="js/map.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

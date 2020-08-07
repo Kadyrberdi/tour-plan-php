@@ -1,6 +1,6 @@
 .navbar
   background-color: $light
-  &-top
+  &-top,&-menu
     display: flex
     justify-content: space-between
     align-items: center
@@ -44,8 +44,6 @@
       display: flex
       align-items: center
       text-decoration: none
-      &--mobile--visible
-        display: none
   &-bottom
     background-color: $dark
   &-menu
@@ -74,14 +72,18 @@
 .logo
   width: 177px
 .user  
-  &__avatar
+  &-avatar
     width: 40px
     height: 40px
     border-radius: 50%
     object-fit: cover
-  &__name
+  &-name
     font-size: 14px;
     line-height: 18px;
     color: $text-color
     margin-left: 18px
+.navbar
+  &-menu
+    &__user
+      display: none
 
