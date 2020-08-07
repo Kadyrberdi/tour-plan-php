@@ -86,10 +86,13 @@ $(document).ready(function () {
     $(".phone_ru").mask("+7(000) 000-00-00");
   });
   AOS.init();
-});
 
-document.querySelector(function () {
-  if (map.getAttribute("data-src")) {
-    map.setAttribute("src", map.getAttribute("data-src"));
+  let map = document.querySelector(".map__frame");
+  map.addEventListener("mouseover", initMap);
+  function initMap() {
+    if (map.getAttribute("data-src")) {
+      map.setAttribute("src", map.getAttribute("data-src"));
+    }
+    map.removeEventListener("mouseover", initMap);
   }
 });
