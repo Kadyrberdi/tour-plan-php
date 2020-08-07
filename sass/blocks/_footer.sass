@@ -33,8 +33,6 @@
     color: $footer-text-color
     margin-top: 0
     margin-bottom: 22px
-    &:hover
-      color: $light
   &__item    
     font-style: normal;
     font-weight: normal;
@@ -49,24 +47,14 @@
       font-size: 14px;
       line-height: 160%;
       color: $footer-text-color
-      text-decoration: none
-    &:hover
-      color: $light
+      text-decoration: none    
   &__icon
     &-wrapper
       width: 40px
       margin: 0
   &__link
     text-decoration: none
-    color: inherit
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    &:hover
-      color: $light
-      background-size: 100% 2px;
+    color: inherit    
   &__logo
     width: 166px
     height: 192px
@@ -129,19 +117,6 @@
     justify-content: space-between
   &__form
     align-items: baseline
-  
-.facebook
-  &:hover, &:focus
-    background-color: blue
-    border-radius: 50%
-.youtube
-  &:hover, &:focus
-    background-color: red
-    border-radius: 50%
-.instagram
-  &:hover, &:focus
-    background-color: #B70094
-    border-radius: 50%
 .first, .second, .third
   &-tel
     margin: 0

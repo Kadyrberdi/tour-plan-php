@@ -33,6 +33,49 @@
       padding: 22px 60px
     &__button
       min-width: 120px
+@media (min-width: 992px)
+  .navbar
+    &-top, &-menu
+      &__link
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover
+          color: $primary
+          background-size: 100% 2px;
+  .footer
+    &__text, &__item
+      &:hover
+        color: $light
+    &__link, &__bottom-link
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      &:hover
+        color: $light
+        background-size: 100% 2px;
+    &__title
+      &:hover
+        color: $primary
+  .first-tel, .second-tel, .third-tel
+    &:hover
+      color: $light
+  .facebook
+    &:hover, &:focus
+      background-color: blue
+      border-radius: 50%
+  .youtube
+    &:hover, &:focus
+      background-color: red
+      border-radius: 50%
+  .instagram
+    &:hover, &:focus
+      background-color: #B70094
+      border-radius: 50%
 @media ( max-width: 992px )
   .container
     max-width: 700px
