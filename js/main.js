@@ -1,9 +1,6 @@
 $(document).ready(function () {
   var hotelSlider = new Swiper(".hotel-slider", {
-    // Optional parameters
     loop: true,
-
-    // Navigation arrows
     navigation: {
       nextEl: ".hotel-slider__button--next",
       prevEl: ".hotel-slider__button--prev",
@@ -16,10 +13,7 @@ $(document).ready(function () {
     },
   });
   var reviewSlider = new Swiper(".reviews-slider", {
-    // Optional parameters
     loop: true,
-
-    // Navigation arrows
     navigation: {
       nextEl: ".reviews-slider__button--next",
       prevEl: ".reviews-slider__button--prev",
@@ -30,17 +24,14 @@ $(document).ready(function () {
       onlyInViewport: true,
     },
   });
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
-
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
@@ -62,7 +53,6 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
-  // Обработка форм
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -85,8 +75,6 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".phone_ru").mask("+7(000) 000-00-00");
   });
-  AOS.init();
-
   let map = document.querySelector(".map-frame");
   map.addEventListener("mouseover", initMap);
   function initMap() {
