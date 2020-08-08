@@ -351,6 +351,11 @@
   .card
     width: 48%
   .other-hotels
+    &__offer--1
+      width: 61px
+      height: 18px
+      padding: 4px 9px
+      left: auto
     &__title
       font-size: 26px
       line-height: 34px
@@ -382,12 +387,6 @@
     &__image
       &--1
         height: 500px
-    &__offer
-      font-size: 10px
-      padding: 2px 8px
-      &--1
-        padding: 2px 8px
-        font-size: 10px
     &__name
       font-size: 14px
       line-height: 100%
@@ -418,6 +417,8 @@
     &__input
       &-group
         flex-basis: 100%
+    &__icon-wrapper
+      margin-right: 7px
 @media ( max-width: 576px )
   .container
     max-width: 500px
@@ -448,10 +449,6 @@
         width: 100%
         grid-row: 1
         grid-column: 1
-    &__offer
-      padding: 8px 12px
-      &--1
-        padding: 8px 12px
     &__image
       max-width: 500px
       width: 100%
@@ -643,20 +640,16 @@
       max-height: 210px
       padding: 20px 12px 25px 20px;
       &--1
-        max-width: 280px
+        width: 300px
+        height: 250px
         width: 100%
-        max-height: 250px
         padding: 20px 12px 25px 20px;        
       &-info
         padding-bottom: 0
     &__image
       &--1
         height: 200px
-    &__offer
-      font-size: 10px
-      padding: 2px 8px
       &--1
-        padding: 2px 8px
         font-size: 10px
     &__name
       font-size: 14px
