@@ -87,7 +87,7 @@ $(document).ready(function () {
   });
   AOS.init();
 
-  let map = document.querySelector(".map__frame");
+  let map = document.querySelector(".map-frame");
   map.addEventListener("mouseover", initMap);
   function initMap() {
     if (map.getAttribute("data-src")) {
